@@ -3,5 +3,9 @@
   "item.firstmod.ruby": "Ruby",
   "item.firstmod.sapphire": "Sapphire",
   "block.firstmod.ruby_ore": "Ruby Ore",
-  "item.firstmod.ruby_sword": "Ruby Sword"
+  "item.firstmod.ruby_sword": "Ruby Sword",
+  "item.firstmod.ruby_helmet": "Ruby Helmet",
+  "item.firstmod.ruby_chestplate": "Ruby Chestplate",
+  "item.firstmod.ruby_leggings": "Ruby Leggings",
+  "item.firstmod.ruby_boots": "Ruby Boots"
 }

@@ -1,12 +1,16 @@
 package com.ghilga.firstmod.util;
 
 import com.ghilga.firstmod.FirstMod;
+import com.ghilga.firstmod.common.armor.ModArmorMaterial;
 import com.ghilga.firstmod.common.block.RubyOre;
 import com.ghilga.firstmod.common.item.BlockItemBase;
 import com.ghilga.firstmod.common.item.ItemBase;
 import com.ghilga.firstmod.common.tools.ModItemTier;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import net.minecraft.block.Block;
 import net.minecraft.client.tutorial.Tutorial;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
@@ -32,6 +36,16 @@ public class RegistryHandler {
     //Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
             new SwordItem(ModItemTier.RUBY,3,-2.4f, new Item.Properties().group(FirstMod.TAB)));
+
+    //Armor
+    public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet", ()->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.HEAD, new Item.Properties().group(FirstMod.TAB)));
+    public static final RegistryObject<ArmorItem> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate", ()->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.CHEST, new Item.Properties().group(FirstMod.TAB)));
+    public static final RegistryObject<ArmorItem> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", ()->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.LEGS, new Item.Properties().group(FirstMod.TAB)));
+    public static final RegistryObject<ArmorItem> RUBY_BOOTS = ITEMS.register("ruby_boots", ()->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.FEET, new Item.Properties().group(FirstMod.TAB)));
 
     //Blocks
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
