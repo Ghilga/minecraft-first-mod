@@ -16,8 +16,8 @@ import java.util.zip.DeflaterInputStream;
 
 public enum ModArmorMaterial implements IArmorMaterial {
 
-    RUBY(FirstMod.MOD_ID + ":ruby", 36, new int[] {5, 9, 7, 4}, 18,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f, () -> { return Ingredient.fromItems(RegistryHandler.RUBY.get()); });
+    RUBY(FirstMod.MOD_ID + ":ruby", 36, new int[] {4, 7, 9, 5}, 18,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0f, () -> { return Ingredient.fromItems(RegistryHandler.RUBY.get()); });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
     private final String name;
