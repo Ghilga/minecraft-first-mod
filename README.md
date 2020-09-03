@@ -9,7 +9,7 @@ a simple mod for minecraft made while learning how to mod
 - ruby furnace recipe
 - ruby full armor set
 - sapphire (unfinished)
+- combat and loot message log in chat
 
 ## todo
-- ruby armor model texture
 - world gen for ruby ore
