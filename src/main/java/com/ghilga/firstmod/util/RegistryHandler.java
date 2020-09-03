@@ -2,13 +2,12 @@ package com.ghilga.firstmod.util;
 
 import com.ghilga.firstmod.FirstMod;
 import com.ghilga.firstmod.common.armor.ModArmorMaterial;
+import com.ghilga.firstmod.common.block.RubyBlock;
 import com.ghilga.firstmod.common.block.RubyOre;
 import com.ghilga.firstmod.common.item.BlockItemBase;
 import com.ghilga.firstmod.common.item.ItemBase;
 import com.ghilga.firstmod.common.tools.ModItemTier;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import net.minecraft.block.Block;
-import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
@@ -49,7 +48,9 @@ public class RegistryHandler {
 
     //Blocks
     public static final RegistryObject<Block> RUBY_ORE = BLOCKS.register("ruby_ore", RubyOre::new);
+    public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
 
     //Block Items
     public static final RegistryObject<Item> RUBY_ORE_ITEM = ITEMS.register("ruby_ore", () -> new BlockItemBase(RUBY_ORE.get()));
+    public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
 }
