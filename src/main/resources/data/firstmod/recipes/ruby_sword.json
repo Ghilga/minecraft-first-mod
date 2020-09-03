@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x",
+    "x",
+    "z"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "firstmod:ruby"
+    },
+    "z":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "firstmod:ruby_sword",
+    "count": 1
+  }
+}
