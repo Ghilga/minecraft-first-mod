@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "firstmod:ruby"
+    }
+  },
+  "result":
+  {
+    "item": "firstmod:ruby_helmet",
+    "count": 1
+  }
+}
