@@ -12,7 +12,6 @@ Forge version: 33.0.37
 - ruby sword
 - ruby furnace recipe
 - ruby full armor set
-- sapphire (unfinished)
 - combat and loot message log in chat
 
 ## todo
