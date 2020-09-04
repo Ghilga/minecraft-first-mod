@@ -2,7 +2,6 @@ package com.ghilga.firstmod.common.armor;
 
 import com.ghilga.firstmod.FirstMod;
 import com.ghilga.firstmod.util.RegistryHandler;
-import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -12,12 +11,17 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.function.Supplier;
-import java.util.zip.DeflaterInputStream;
 
 public enum ModArmorMaterial implements IArmorMaterial {
 
-    RUBY(FirstMod.MOD_ID + ":ruby", 36, new int[] {4, 7, 9, 5}, 18,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0f, () -> { return Ingredient.fromItems(RegistryHandler.RUBY.get()); });
+    RUBY(FirstMod.MOD_ID + ":ruby"
+            , 36
+            , new int[] {4, 7, 9, 5}
+            , 18
+            , SoundEvents.ITEM_ARMOR_EQUIP_GENERIC
+            , 3.0f
+            , () -> { return Ingredient.fromItems(RegistryHandler.RUBY.get()); }
+            , 0.0f);
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
     private final String name;
@@ -27,9 +31,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final SoundEvent soundEvent;
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
+    private final float knockbackResistance;
 
     ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability,
-                     SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
+                     SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial, float knockbackResistance) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmountArray = damageReductionAmountArray;
@@ -37,6 +42,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
         this.soundEvent = soundEvent;
         this.toughness = toughness;
         this.repairMaterial = repairMaterial;
+        this.knockbackResistance = knockbackResistance;
     }
 
     @Override
@@ -73,5 +79,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+
+    @Override
+    public float func_230304_f_() {
+        return this.knockbackResistance;
     }
 }
