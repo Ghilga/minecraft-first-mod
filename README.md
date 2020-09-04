@@ -13,3 +13,4 @@ a simple mod for minecraft made while learning how to mod
 
 ## todo
 - world gen for ruby ore
+- fix combat and loot messages (stopped working after updating forge version)
