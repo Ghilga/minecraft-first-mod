@@ -1,9 +1,13 @@
 # minecraft-first-mod
-a simple mod for minecraft made while learning how to mod
+A simple mod for minecraft made while learning how to mod
 
 Minecraft version: 1.16.3   
 
 Forge version: 34.0.1
+
+## download
+https://github.com/Ghilga/minecraft-first-mod/raw/master/ModJars/firstmod-1.0.jar   
+remember to install the correct version of forge, then just drag the jar to minecraft mods folder.
 
 ## features
 - ruby
