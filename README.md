@@ -12,7 +12,10 @@ Forge version: 34.0.1
 - ruby sword
 - ruby furnace recipe
 - ruby full armor set
-- combat and loot message log in chat
+- combat message log in chat (with colors) 
+  - which monster died
+  - how much xp dropped (green color)
+  - what items dropped and how many (yellow color)
 
 ## todo
 - world gen for ruby ore
