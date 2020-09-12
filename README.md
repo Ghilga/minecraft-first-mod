@@ -1,9 +1,9 @@
 # minecraft-first-mod
 a simple mod for minecraft made while learning how to mod
 
-Minecraft version: 1.16.2   
+Minecraft version: 1.16.3   
 
-Forge version: 33.0.37
+Forge version: 34.0.1
 
 ## features
 - ruby
@@ -16,4 +16,3 @@ Forge version: 33.0.37
 
 ## todo
 - world gen for ruby ore
-- fix combat and loot messages (stopped working after updating forge version)
