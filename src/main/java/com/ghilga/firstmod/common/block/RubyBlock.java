@@ -12,7 +12,9 @@ public class RubyBlock extends Block {
                 .hardnessAndResistance(5.0f, 6.0f)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
-                //.func_235861_h_()
+                .func_235861_h_()
                 .sound(SoundType.METAL));
     }
+
+
 }
